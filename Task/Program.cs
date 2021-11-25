@@ -44,24 +44,39 @@ else if (task3First < task3Second)
     Console.WriteLine("Меньшее:  " + task3First);
 }
 else Console.WriteLine("Числа равны");
-*/
+
 // 3. По заданному номеру дня недели вывести его название
 Console.WriteLine("Task 3:    Введите номер дня недели:   ");
 
 byte dayOfWeek = byte.Parse(Console.ReadLine());
 
 if (dayOfWeek == 1) Console.WriteLine("Это понедельник");
-
 else if (dayOfWeek == 2) Console.WriteLine("Это вторник");
 else if (dayOfWeek == 3) Console.WriteLine("Это среда");
 else if (dayOfWeek == 4) Console.WriteLine("Это четверг");
 else if (dayOfWeek == 5) Console.WriteLine("Это пятница");
 else if (dayOfWeek == 6) Console.WriteLine("Это суббота");
-else if (dayOfWeek == 7) Console.WriteLine("Это воскресение");
+else if (dayOfWeek == 7) Console.WriteLine("Это воскресенье");
 else Console.WriteLine("Количество дней в неделе меньше 7");
 
+string [] array = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
+if (dayOfWeek>7 || dayOfWeek<1)
+{
+    Console.WriteLine("Количество дней в неделе меньше 7");
+}
+else Console.WriteLine(array[dayOfWeek - 1]);
+*/
 
 // 4. Найти максимальное из трех чисел
+Console.WriteLine("Task 4");
+byte a = 1;
+byte b = 8;
+byte c = 3;
+byte max = a;
+if (b>max) max = b;
+if (c>max) max = c;
+Console.WriteLine("Максимальное число - " + max);
+
 // 5. Написать программу вычисления значения функции y = f(a)
 // 6. Выяснить является ли число чётным
 // 7. Показать числа от -N до N
