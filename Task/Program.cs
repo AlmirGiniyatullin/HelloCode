@@ -65,7 +65,7 @@ if (dayOfWeek>7 || dayOfWeek<1)
     Console.WriteLine("Количество дней в неделе меньше 7");
 }
 else Console.WriteLine(array[dayOfWeek - 1]);
-*/
+
 
 // 4. Найти максимальное из трех чисел
 Console.WriteLine("Task 4");
@@ -78,15 +78,81 @@ if (c>max) max = c;
 Console.WriteLine("Максимальное число - " + max);
 
 // 5. Написать программу вычисления значения функции y = f(a)
+/* Задана функция у =  х + 1 , при х >= 0
+                  у =  |х|, x < 0
+
+int x = 1
+int y = 0
+if (x>=0)  y = x + 1
+else 
+
 // 6. Выяснить является ли число чётным
+*/
+
+
 // 7. Показать числа от -N до N
+/*
+int n = 5;
+int m = -1 * n;
+while (m<n)
+{
+    Console.WriteLine(m);
+    m++; 
+}
+*/
+
 // 8. Показать четные числа от 1 до N
+/*
+int n = 11;
+int index = 1;
+while (index<n)
+{
+if (index%2 == 0 ) Console.WriteLine(index);
+    index++; 
+}
+*/
+
 // 9. Показать последнюю цифру трёхзначного числа
+
+//Console.WriteLine(tri % 10);
+
 //10. Показать вторую цифру трёхзначного числа
+// int tri = 156/10
+//Console.WriteLine(tri % 10);
+
 //11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
+/*
+int numberAA = new Random().Next(10, 99);
+Console.WriteLine(numberAA);
+int des = numberAA/10;
+int edin = numberAA % 10;
+if (des>edin) Console.WriteLine("Максимальное число - " + des);
+else if(des<edin) Console.WriteLine("Максимальное число - " + edin);
+else Console.WriteLine("Они равны");
+*/
+
+/*
 //12. Удалить вторую цифру трёхзначного числа
+int chislo = 415;
+int sot = chislo/100;
+int edin12 = chislo % 10;
+int chislo12 = sot*10 +edin12;
+Console.WriteLine("Искомое число - " + chislo12);
+
+
+
 //13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
+
+
+
 //14. Найти третью цифру числа или сообщить, что её нет
+*/
+int number14 = new Random().Next(10, 10000);
+Console.WriteLine(number14);
+int sot14 = (number14/100) % 10;
+if (sot14 == 0) Console.WriteLine("Третьей цифры нет");
+else Console.WriteLine("Третья цифра - " + sot14);
+
 
 // Почувствуй себя джуном
 //15. Дано число. Проверить кратно ли оно 7 и 23
