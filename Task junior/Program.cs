@@ -87,7 +87,7 @@ else Console.WriteLine("Вы выбрали границу четвертей и
 */
 
 //20. Задать номер четверти, показать диапазоны для возможных координат
-Console.Write("Task20 - введите границу:   ");
+/*Console.Write("Task20 - введите границу:   ");
 int number20 = int.Parse(Console.ReadLine());
 int number20x = number20;
 int number20y = number20;
@@ -101,15 +101,23 @@ else if (number20n == 3 || number20n == 4) Console.WriteLine($"Диапазон 
 if (number20n == 1 || number20n == 4) Console.WriteLine($"Диапазон для возможных координат по У: от 1 до {number20y}");
 else if (number20n == 2 || number20n == 3) Console.WriteLine($"Диапазон для возможных координат по У: от {-number20y} до 1");
 else Console.WriteLine("Количество четвертей не может превышать 4");
-
-//     Console.WriteLine(("").PadRight(33, ' ') + "по У: от 1 до " + number20y);
-//Console.Write("значение Y: {0}\n", Y);
-
+*/
 
 //21. Программа проверяет пятизначное число на палиндромом.
+/*int i = 25452;
+int a = int.Parse(Convert.ToString(i)[0].ToString());
+int b = int.Parse(Convert.ToString(i)[1].ToString());
+int c = int.Parse(Convert.ToString(i)[2].ToString());
+int d = int.Parse(Convert.ToString(i)[3].ToString());
+int e = int.Parse(Convert.ToString(i)[4].ToString());
 
+if (a== e && b == d) Console.WriteLine("Yes");
+else Console.WriteLine("Yes");*/
 //22. Найти расстояние между точками в пространстве 2D/3D
-/*Math.Sqrt() корень
-Math.Pow
-это возведение в степень
-*/
+int x1 = 2;
+int x2 = 4;
+int y1 = 9;
+int y2 = 3;
+
+double a = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+Console.WriteLine(a);
