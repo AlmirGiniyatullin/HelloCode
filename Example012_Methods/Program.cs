@@ -1,4 +1,5 @@
 ﻿// // // Вид 1. Описание
+/*
 void Method1() 
 {
     Console.WriteLine("Автор ...");
@@ -113,7 +114,7 @@ Console.WriteLine(newText);
 Console.WriteLine();
 newText = Replace(newText, 'к', 'К');
 Console.WriteLine(newText);
-
+*/
 // Сортировка одномерного массива
 int[] arr = { 1, 5, 4, 3, 2, 6, 7, 1, 1 };
 
