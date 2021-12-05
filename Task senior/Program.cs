@@ -53,23 +53,45 @@ FillArray(array);
 Array.ForEach(array, Console.WriteLine); //Заменяет метод PrintArray(array); */
 
 // 33. Задать массив из 12 элементов, заполненных числами из [0,9]. Найти сумму положительных/отрицательных элементов массива
-/* void FillArray(int[] collection)
-{
-    int length = collection.Length;
-    int index = 0;
-    while (index < length)
-    {
-        collection[index] = new Random().Next(10);  // от 0 до 9, второе число не включительно
-        //index = index + 1;
-        index++;
-    }
-}
+// void FillArray(int[] collection)
+// {
+//     int length = collection.Length;
+//     int index = 0;
+//     while (index < length)
+//     {
+//         collection[index] = new Random().Next(-9, 10);  // от 0 до 9, второе число не включительно
+//         //index = index + 1;
+//         index++;
+//     }
+// }
 
-int[] array = new int[12];
+// void SumItems(int[] collection)
+// {
+//     int length = collection.Length;
+//     int positive = 0;
+//     int negative = 0;
+//     for (int index = 0; index < length; index++)
+//     {
+//         if (collection[index] >= 0)
+//         {
+//             positive++;            
+//         }
+//         else
+//         {
+//             negative++;
+//         }
+//     }
+//     Console.WriteLine("Сумма полочительных чисел в массиве: " + positive);
+//     Console.WriteLine("Сумма отрицательных чисел в массиве: " + negative);
+// }
 
-FillArray(array);
+// int[] array = new int[12];
 
-Array.ForEach(array, Console.WriteLine); //Заменяет метод PrintArray(array); */
+// FillArray(array);
+
+// Array.ForEach(array, Console.WriteLine); //Заменяет метод PrintArray(array);
+
+// SumItems(array);
 
 
 //34. Написать программу замену элементов массива на противоположные
@@ -213,55 +235,203 @@ evenOdd(array); */
 
 
 //37. В одномерном массиве из 123 чисел найти количество элементов из отрезка [10,99]
-Console.WriteLine("Task37   ");
-void FillArray(int[] collection) // создание массива
+// Console.WriteLine("Task37   ");
+// void FillArray(int[] collection) // создание массива
+// {
+//     int length = collection.Length;
+//     int index = 0;
+//     while (index < length)
+//     {
+//         collection[index] = new Random().Next(110);
+//         //index = index + 1;
+//         index++;
+//     }
+// }
+
+// void PrintArray(int[] col) // печать массива без переноса на новую строку
+// {
+//     int count = col.Length;
+//     int position = 0;
+//     while (position < count)
+//     {
+//         //Console.Write(col[position]);  - переносится на новую строку
+//         Console.Write($"{col[position]} "); // без переноса на новую строку
+//         position++;
+//     }
+//     Console.WriteLine();
+// }
+
+// int IndexOf(int[] collection, int find, int find1) // подсчет количества элементов из отрезка [10,99]
+// {
+//     int count = collection.Length;
+//     int once = 0;
+//     for (int index = 0; index < count; index++)
+//     {
+//         if (collection[index] >= find && collection[index] <= find1)
+//         {
+//             once++;
+//         }
+//         else
+//         {
+//             Console.Write($"{collection[index]},  ");
+//         }
+//     }
+//     return once;    
+// }
+
+// int[] array = new int[123];
+
+// FillArray(array);
+
+// PrintArray(array);
+
+// int pos = IndexOf(array, 10, 99);
+// Console.WriteLine ();
+// Console.WriteLine("Количества элементов из отрезка от 10 до 99, которые встречаются в массиве " + pos + " раз"); 
+
+// 38. Найти сумму чисел одномерного массива стоящих на нечетной позиции
+// Console.WriteLine("Task38   ");
+// void FillArray(int[] collection) // создание массива
+// {
+//     int length = collection.Length;
+//     int index = 0;
+//     while (index < length)
+//     {
+//         collection[index] = new Random().Next(10);
+//         //index = index + 1;
+//         index++;
+//     }
+// }
+
+// void PrintArray(int[] col) // печать массива без переноса на новую строку
+// {
+//     int count = col.Length;
+//     int position = 0;
+//     while (position < count)
+//     {
+//         //Console.Write(col[position]);  - переносится на новую строку
+//         Console.Write($"{col[position]} "); // без переноса на новую строку
+//         position++;
+//     }
+//     Console.WriteLine();
+// }
+
+// int Sum(int[] collection) // подсчет суммы чисел одномерного массива стоящих на нечетной позиции
+// {
+//     int count = collection.Length;
+//     int negative = 0;
+//     int index = 0;
+//     while (index < count)
+//     {
+//         negative= negative + collection[index];
+//         index = index + 2;
+
+//     }
+//     return negative;
+// }
+
+// int[] array = new int[10];
+
+// FillArray(array);
+
+// PrintArray(array);
+
+// int pos = Sum(array);
+// Console.WriteLine();
+// Console.WriteLine("Суммы чисел одномерного массива стоящих на нечетной позиции: " + pos);
+
+// 39. Найти произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д.
+// void FillArray(int[] collection) // создание массива
+// {
+//     int length = collection.Length;
+//     int index = 0;
+//     while (index < length)
+//     {
+//         collection[index] = new Random().Next(10);
+//         //index = index + 1;
+//         index++;
+//     }
+// }
+
+// void PrintArray(int[] col) // печать массива без переноса на новую строку
+// {
+//     int count = col.Length;
+//     int position = 0;
+//     while (position < count)
+//     {
+//         //Console.Write(col[position]);  - переносится на новую строку
+//         Console.Write($"{col[position]} "); // без переноса на новую строку
+//         position++;
+//     }
+//     Console.WriteLine();
+// }
+
+// void Prod(int[] collection) // Найти произведение пар чисел в одномерном массиве.
+// {
+//     int count = collection.Length; // длина массива
+//     int k = count / 2;                 // середина массива
+//     int result = 0;
+//     for (int i = 0; i < k; i++) Console.WriteLine("Произведение '{0}' пары чисел = {1}", i, collection[i]* collection[count- i -1]);
+
+// }
+
+// int[] array = new int[10];
+
+// FillArray(array);
+
+// PrintArray(array);
+
+// Prod(array);
+
+// 40. В Указанном массиве вещественных чисел найдите разницу между максимальным и минимальным элементом 
+Console.WriteLine("Task40   ");
+void FillArray(double[] collection) // создание массива
 {
     int length = collection.Length;
     int index = 0;
     while (index < length)
     {
-        collection[index] = new Random().Next(110);
+        collection[index] = new Random().Next(100000) / 100.0;  // число от 0 до 1000 (100000/100) два элемента после запятой 
         //index = index + 1;
         index++;
     }
 }
 
-void PrintArray(int[] col) // печать массива без переноса на новую строку
+void PrintArray(double[] col) // печать массива без переноса на новую строку
 {
     int count = col.Length;
     int position = 0;
     while (position < count)
     {
-        //Console.Write(col[position]);  - переносится на новую строку
-        Console.Write($"{col[position]} "); // без переноса на новую строку
+        Console.WriteLine(col[position]); // - переносится на новую строку
+        //Console.Write($"{col[position]} "); // без переноса на новую строку
         position++;
     }
     Console.WriteLine();
 }
 
-int IndexOf(int[] collection, int find, int find1) // подсчет количества элементов из отрезка [10,99]
+double Raznost(double[] collection) // разницу между максимальным и минимальным элементом
 {
     int count = collection.Length;
-    int once = 0;
-    for (int index = 0; index < count; index++)
+    double max = collection[0];
+    double min = collection[0];
+    for (int i = 1; i < count; i++)
     {
-        if (collection[index] >= find && collection[index] <= find1)
-        {
-            once++;
-        }
+        if (collection[i] > max) max = collection[i];
+        else if (collection[i] < min) min = collection[i];
     }
-    return once;    
+
+    return max - min;
 }
 
-int[] array = new int[123];
+double[] array = new double[10];
 
 FillArray(array);
 
 PrintArray(array);
 
-int pos = IndexOf(array, 10, 99);
-Console.WriteLine("Количества элементов из отрезка от 10 до 99, которые встречаются в массиве " + pos + " раз"); 
+double pos = Raznost(array);
+Console.WriteLine();
+Console.WriteLine("Разница между максимальным и минимальным элементом: " + pos);
 
-/*38. Найти сумму чисел одномерного массива стоящих на нечетной позиции
-39. Найти произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д.
-40. В Указанном массиве вещественных чисел найдите разницу между максимальным и минимальным элементом */
+
